@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            height: auto;
+            width: auto;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        fieldset {
+            height: auto;
+            width: 50vw;
+            background-color: lightgreen;
+            border: 5px solid red;
+        }
+
+        label {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>Personal Details</h1><br><br>
+        <form>
+            <label for="name">FullName:</label>
+            <input type="text" id="name" width="100vw" required><br><br>
+
+            <label for="pass">Password:</label>
+            <input type="password" id="passw" maxlength="10"><br><br>
+
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" required placeholder="saloni@gmail.com"> <br><br>
+
+
+            <label for="" name="gender">Gender</label>
+            <input type="radio" id="male" value="Male" name="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" value="Female" name="gender">
+            <label for="female">Female</label><br><br>
+
+            <label for="cont">Contact :</label>
+            <input type="tel" id="cont" maxlength="10"> <br><br>
+
+            <h1>Educational Qualification</h1><br><br>
+
+            <label for="degree">Select Degree:</label>
+            <input list="degrees" name="degree" id="degree" placeholder="--Select Group--">
+
+            <datalist id="degrees">
+                <option value="master">
+                <option value="bachelor">
+                <option value="phd">
+            </datalist> <br><br>
+
+            <label for="engineer">Engineering :</label>
+            <input list="engineers" name="engineer" id="engineer" placeholder="--Select Group--">
+
+            <datalist id="engineers">
+                <option value="Computer">
+                <option value="Civil">
+                <option value="Aeronautical">
+                <option value="matallurgy"></option>
+                <option value="Electronics"></option>
+            </datalist><br><br>
+
+            <label for="hobbies">Hobbies:</label>
+
+            <input type="radio" id="hobbies" value="Playing Chess" name="hobbies"> 
+            <label for="hobbies">Playing Chess</label>
+            <input type="radio" id="hobbies" value="Reading Books" name="hobbies">
+            <label for="hobbies">Reading Books</label><br><br>
+
+            <h1>Address</h1><br><br>
+
+            <textarea cols="80" rows="5"></textarea><br><br>
+
+            <label for="resume">Attach Resume :</label>
+            <input type="file" id="resume"><br><br>
+
+            <button type="submit" style="height: fit-content;">Submit</button>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
